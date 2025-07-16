@@ -1,6 +1,9 @@
 #! /usr/bin/env nextflow
 //FastQC pipeline
 
+//PARAMS
+params.reads = "/workspaces/prime-seq/data/reads/SRR*_{1,2}.fastq.gz"
+
 process FastQC{
     container "community.wave.seqera.io/library/trim-galore:0.6.10--1bf8ca4e1967cd18"
     publishDir "results/FastQC", mode : "symlink"
@@ -22,8 +25,36 @@ process FastQC{
     """
 
 }
-workflow{
-    Channel.fromFilePairs("${projectDir}/data/reads/SRR*_{1,2}.fastq.gz").
-    view()
+process PRUEBA{
+    input:
+    tuple val(prefix), path(reads)
+    output:
+    stdout
+    script:
+    """
+    echo "${prefix} con ${reads[0]} con ${reads[1]}"
+    """
 
+}
+process PRUEBA1 {
+    publishDir "results", mode: "symlink"
+    
+    input:
+    tuple val(prefix), path(reads)
+    
+    output:
+
+    path "info.txt"
+
+    script:
+    """
+    echo "Prefijo: ${prefix}" > info.txt
+    echo "Archivos: ${reads[0]} y ${reads[1]}" >> info.txt
+    """
+}
+
+workflow{
+    read_ch = channel.fromFilePairs(params.reads, checkIfExists: true)
+    read_ch.view()
+    PRUEBA1(read_ch)
 }

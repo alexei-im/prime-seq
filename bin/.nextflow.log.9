@@ -1,0 +1,48 @@
+Jul-15 23:17:26.053 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
+Jul-15 23:17:26.207 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-15 23:17:26.252 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-15 23:17:26.299 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-15 23:17:26.303 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-15 23:17:26.307 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-15 23:17:26.325 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-15 23:17:26.473 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-15 23:17:26.494 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [nauseous_becquerel] DSL2 - revision: decce67731
+Jul-15 23:17:26.498 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-15 23:17:26.499 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-15 23:17:26.604 [main] DEBUG nextflow.Session - Session UUID: 9be3b74c-4bd2-4353-871d-47be15d6dfc0
+Jul-15 23:17:26.605 [main] DEBUG nextflow.Session - Run name: nauseous_becquerel
+Jul-15 23:17:26.606 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-15 23:17:26.621 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-15 23:17:26.638 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-15 23:17:26.672 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC 
+  System: Linux 6.8.0-1027-azure
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 28496@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (219.6 MB) - Swap: 0 (0)
+Jul-15 23:17:26.716 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
+Jul-15 23:17:26.717 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-15 23:17:26.744 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-15 23:17:26.758 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-15 23:17:26.768 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-15 23:17:26.814 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-15 23:17:26.831 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-15 23:17:26.909 [main] DEBUG nextflow.Session - Session start
+Jul-15 23:17:28.129 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-15 23:17:28.151 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-15 23:17:28.165 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2ba1209b] - activable => nextflow.secret.LocalSecretsProvider@2ba1209b
+Jul-15 23:17:28.381 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FastQC
+Jul-15 23:17:28.386 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Jul-15 23:17:28.396 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_fe81b832d6a5be9b: /workspaces/prime-seq/bin/fastqc.nf
+Jul-15 23:17:28.398 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-15 23:17:28.398 [main] DEBUG nextflow.Session - Session await
+Jul-15 23:17:28.398 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-15 23:17:28.398 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-15 23:17:28.400 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
+Jul-15 23:17:28.456 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-15 23:17:28.532 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-15 23:17:28.563 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-15 23:17:28.564 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

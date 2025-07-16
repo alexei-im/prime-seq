@@ -1,0 +1,70 @@
+Jul-15 23:11:37.228 [main] DEBUG nextflow.cli.Launcher - $> nextflow run bin/fastqc.nf
+Jul-15 23:11:37.387 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-15 23:11:37.431 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-15 23:11:37.475 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-15 23:11:37.477 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-15 23:11:37.481 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-15 23:11:37.500 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-15 23:11:37.691 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-15 23:11:37.713 [main] DEBUG nextflow.cli.CmdRun - Launching `bin/fastqc.nf` [peaceful_brahmagupta] DSL2 - revision: 912df57a5d
+Jul-15 23:11:37.717 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-15 23:11:37.717 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-15 23:11:37.821 [main] DEBUG nextflow.Session - Session UUID: 2855b7ba-d75b-4199-b259-4f92e9fc2416
+Jul-15 23:11:37.823 [main] DEBUG nextflow.Session - Run name: peaceful_brahmagupta
+Jul-15 23:11:37.823 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-15 23:11:37.842 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-15 23:11:37.858 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-15 23:11:37.890 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC 
+  System: Linux 6.8.0-1027-azure
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 24747@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (260.9 MB) - Swap: 0 (0)
+Jul-15 23:11:37.935 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/work [ext2/ext3]
+Jul-15 23:11:37.936 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-15 23:11:37.956 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-15 23:11:37.968 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-15 23:11:37.979 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-15 23:11:38.018 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-15 23:11:38.030 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-15 23:11:38.104 [main] DEBUG nextflow.Session - Session start
+Jul-15 23:11:39.301 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-15 23:11:39.320 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-15 23:11:39.332 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3730f716] - activable => nextflow.secret.LocalSecretsProvider@3730f716
+Jul-15 23:11:39.401 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_01780dc3e8c32adb: /workspaces/prime-seq/bin/fastqc.nf
+Jul-15 23:11:39.402 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function view()
+Jul-15 23:11:39.413 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function view()
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:192)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.lang.String.view() is applicable for argument types: () values: []
+Possible solutions: lines(), find(), grep(), size(), find(groovy.lang.Closure), grep(java.lang.Object)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:72)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.unwrap(IndyGuardsFiltersAndSignatures.java:163)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_01780dc3e8c32adb$_runScript_closure2$_closure4.doCall(Script_01780dc3e8c32adb:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	... 12 common frames omitted

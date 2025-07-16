@@ -1,0 +1,77 @@
+Jul-15 23:27:17.444 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
+Jul-15 23:27:17.579 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-15 23:27:17.617 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-15 23:27:17.691 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-15 23:27:17.692 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-15 23:27:17.696 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-15 23:27:17.721 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-15 23:27:17.895 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-15 23:27:17.918 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [grave_bassi] DSL2 - revision: d8cfce6131
+Jul-15 23:27:17.923 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-15 23:27:17.924 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-15 23:27:18.067 [main] DEBUG nextflow.Session - Session UUID: d1bbde3a-6e33-4cb7-bb24-f4d4e19c2680
+Jul-15 23:27:18.067 [main] DEBUG nextflow.Session - Run name: grave_bassi
+Jul-15 23:27:18.069 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-15 23:27:18.084 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-15 23:27:18.096 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-15 23:27:18.134 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC 
+  System: Linux 6.8.0-1027-azure
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 33136@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (253.7 MB) - Swap: 0 (0)
+Jul-15 23:27:18.174 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
+Jul-15 23:27:18.175 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-15 23:27:18.201 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-15 23:27:18.216 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-15 23:27:18.224 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-15 23:27:18.268 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-15 23:27:18.280 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-15 23:27:18.349 [main] DEBUG nextflow.Session - Session start
+Jul-15 23:27:19.566 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-15 23:27:19.607 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-15 23:27:19.624 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1b3ab4f9] - activable => nextflow.secret.LocalSecretsProvider@1b3ab4f9
+Jul-15 23:27:19.904 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-15 23:27:19.908 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-15 23:27:19.917 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-15 23:27:19.934 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jul-15 23:27:19.939 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-15 23:27:19.989 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PRUEBA': maxForks=0; fair=false; array=0
+Jul-15 23:27:20.046 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FastQC, PRUEBA
+Jul-15 23:27:20.051 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-15 23:27:20.059 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
+Jul-15 23:27:20.058 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PRUEBA
+Jul-15 23:27:20.061 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a0540883c7715901: /workspaces/prime-seq/bin/fastqc.nf
+Jul-15 23:27:20.062 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-15 23:27:20.065 [main] DEBUG nextflow.Session - Session await
+Jul-15 23:27:20.187 [Actor Thread 2] WARN  nextflow.processor.TaskProcessor - Input tuple does not match tuple declaration in process `PRUEBA` -- offending value: [SRR001, [/workspaces/prime-seq/data/reads/SRR001_1.fastq.gz, /workspaces/prime-seq/data/reads/SRR001_2.fastq.gz]]
+Jul-15 23:27:20.290 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PRUEBA (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Path value cannot be null
+Jul-15 23:27:20.328 [Actor Thread 2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PRUEBA (1)'
+
+Caused by:
+  Path value cannot be null
+
+
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jul-15 23:27:20.332 [Actor Thread 2] DEBUG nextflow.Session - Session aborted -- Cause: Path value cannot be null
+Jul-15 23:27:20.348 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-15 23:27:20.366 [Actor Thread 2] DEBUG nextflow.Session - The following nodes are still active:
+[process] PRUEBA
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jul-15 23:27:20.372 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-15 23:27:20.372 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-15 23:27:20.376 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PRUEBA; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Jul-15 23:27:20.379 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-15 23:27:20.547 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-15 23:27:20.566 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
