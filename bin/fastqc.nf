@@ -6,10 +6,11 @@ params.reads = "/workspaces/prime-seq/data/reads/SRR*_{1,2}.fastq.gz"
 
 process FastQC{
     container "community.wave.seqera.io/library/trim-galore:0.6.10--1bf8ca4e1967cd18"
-    publishDir "results/FastQC", mode : "symlink"
+    publishDir "/workspaces/prime-seq/results/FastQC", mode : "symlink", pattern: "*.{zip,html,txt}"
+    publishDir "/workspaces/prime-seq/results/trimmed", mode : "symlink", pattern: "*.gz"
     
     input :
-    tuple path(read1), path(read2)
+    tuple val(prefix), path(reads)
 
     output :
     tuple path("*_val_1.fq.gz"), path("*_val_2.fq.gz"), emit: trimmed_reads
@@ -21,7 +22,7 @@ process FastQC{
 
     script:
     """
-    fastqc --fastqc --paired ${read1} ${read2}
+    trim_galore --fastqc --paired ${reads[0]} ${reads[1]}
     """
 
 }
@@ -56,5 +57,5 @@ process PRUEBA1 {
 workflow{
     read_ch = channel.fromFilePairs(params.reads, checkIfExists: true)
     read_ch.view()
-    PRUEBA1(read_ch)
+    FastQC(read_ch)
 }
