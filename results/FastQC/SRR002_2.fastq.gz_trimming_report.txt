@@ -1,1 +1,0 @@
-/workspaces/prime-seq/bin/work/c2/9bdb93badf917e1f5d5380bff2e9a4/SRR002_2.fastq.gz_trimming_report.txt
