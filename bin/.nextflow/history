@@ -36,3 +36,5 @@
 2025-07-18 06:24:08	31.8s	naughty_cori	ERR	6f3689bf5529a5d36cc679a967eca0f7	e332ceba-2d15-4932-b561-5a52cc49a08c	nextflow run fastqc.nf --resume
 2025-07-18 06:26:06	44.5s	happy_swanson	OK	70d2581080834a24a814ec9ec55a1994	95dad181-3487-45d1-b88f-9c243d263427	nextflow run fastqc.nf --resume
 2025-07-18 06:30:17	41.9s	reverent_descartes	OK	70d2581080834a24a814ec9ec55a1994	540a4cb2-5e49-4269-98cd-c2d355706a0d	nextflow fastqc.nf
+2025-07-21 00:36:03	17.1s	suspicious_planck	ERR	70d2581080834a24a814ec9ec55a1994	0c968cae-61ff-4a6f-960a-1e9bb9abdc42	nextflow run fastqc.nf
+2025-07-21 00:37:45	-	jovial_lagrange	-	31c6cdc3781f6c62b626354cc9857187	b40825ec-9add-4758-a27c-1b66f662329e	nextflow run fastqc.nf
