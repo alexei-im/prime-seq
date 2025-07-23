@@ -1,94 +1,89 @@
-Jul-15 23:36:56.644 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
-Jul-15 23:36:56.807 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Jul-15 23:36:56.848 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Jul-15 23:36:56.886 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-15 23:36:56.887 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-15 23:36:56.891 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jul-15 23:36:56.912 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-15 23:36:57.077 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jul-15 23:36:57.099 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [magical_gauss] DSL2 - revision: 7a310354f5
-Jul-15 23:36:57.102 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-15 23:36:57.103 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-15 23:36:57.220 [main] DEBUG nextflow.Session - Session UUID: dd041b54-5554-472d-8365-a4b02bf68990
-Jul-15 23:36:57.222 [main] DEBUG nextflow.Session - Run name: magical_gauss
-Jul-15 23:36:57.223 [main] DEBUG nextflow.Session - Executor pool size: 2
-Jul-15 23:36:57.235 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-15 23:36:57.251 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-15 23:36:57.282 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-18 06:17:18.671 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
+Jul-18 06:17:18.926 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-18 06:17:18.967 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-18 06:17:19.008 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-18 06:17:19.015 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-18 06:17:19.024 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-18 06:17:19.053 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-18 06:17:19.100 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/prime-seq/bin/nextflow.config
+Jul-18 06:17:19.104 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/prime-seq/bin/nextflow.config
+Jul-18 06:17:19.202 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-18 06:17:19.207 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Jul-18 06:17:19.231 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-18 06:17:20.004 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-18 06:17:20.027 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [loquacious_bartik] DSL2 - revision: da6106a705
+Jul-18 06:17:20.031 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-18 06:17:20.031 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-18 06:17:20.113 [main] DEBUG nextflow.Session - Session UUID: 843077cb-6e05-4c26-8ba4-0d7611da6727
+Jul-18 06:17:20.114 [main] DEBUG nextflow.Session - Run name: loquacious_bartik
+Jul-18 06:17:20.115 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-18 06:17:20.128 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-18 06:17:20.136 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-18 06:17:20.166 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC 
   System: Linux 6.8.0-1027-azure
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 38210@codespaces-b9a470 [127.0.0.1]
-  CPUs: 2 - Mem: 7.8 GB (279.7 MB) - Swap: 0 (0)
-Jul-15 23:36:57.320 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
-Jul-15 23:36:57.320 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
-Jul-15 23:36:57.341 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-15 23:36:57.355 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-15 23:36:57.364 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-15 23:36:57.410 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-15 23:36:57.426 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
-Jul-15 23:36:57.502 [main] DEBUG nextflow.Session - Session start
-Jul-15 23:36:58.817 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-15 23:36:58.835 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
-Jul-15 23:36:58.848 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@733e6df7] - activable => nextflow.secret.LocalSecretsProvider@733e6df7
-Jul-15 23:36:59.076 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_af6f400605168d17: /workspaces/prime-seq/bin/fastqc.nf
-Jul-15 23:36:59.077 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown variable 'info'
-Jul-15 23:36:59.109 [main] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] view
+  Process: 29136@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (332.3 MB) - Swap: 0 (0)
+Jul-18 06:17:20.204 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
+Jul-18 06:17:20.205 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-18 06:17:20.218 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-18 06:17:20.230 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-18 06:17:20.238 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-18 06:17:20.285 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-18 06:17:20.298 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-18 06:17:20.380 [main] DEBUG nextflow.Session - Session start
+Jul-18 06:17:21.005 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-18 06:17:21.305 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-18 06:17:21.305 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-18 06:17:21.314 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-18 06:17:21.323 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jul-18 06:17:21.327 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-18 06:17:21.379 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FastQC': maxForks=0; fair=false; array=0
+Jul-18 06:17:21.450 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Alignment, FastQC
+Jul-18 06:17:21.453 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-18 06:17:21.464 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
+Jul-18 06:17:21.466 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
+Jul-18 06:17:21.467 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_737bb28243a24681: /workspaces/prime-seq/bin/fastqc.nf
+Jul-18 06:17:21.467 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-18 06:17:21.467 [main] DEBUG nextflow.Session - Session await
+Jul-18 06:17:21.654 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FastQC (2); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `FastQC (2)` script contains error(s)
+Jul-18 06:17:21.738 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FastQC (2)'
 
-Jul-15 23:36:59.118 [main] ERROR nextflow.cli.Launcher - @unknown
-groovy.lang.MissingPropertyException: Unknown variable 'info'
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.ProcessConfig.getProperty(ProcessConfig.groovy:298)
-	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:167)
-	at groovy.lang.Closure.getPropertyTryThese(Closure.java:325)
-	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:315)
-	at groovy.lang.Closure.getProperty(Closure.java:301)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_af6f400605168d17$_runScript_closure3.doCall(Script_af6f400605168d17:45)
-	at Script_af6f400605168d17$_runScript_closure3.doCall(Script_af6f400605168d17)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.ProcessDef.initialize(ProcessDef.groovy:111)
-	at nextflow.script.ProcessDef.run(ProcessDef.groovy:169)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:105)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
-	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_af6f400605168d17$_runScript_closure4$_closure8.doCall(Script_af6f400605168d17:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
-	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
-	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
-	at nextflow.cli.Launcher.run(Launcher.groovy:513)
-	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Caused by:
+  No such variable: reads1 -- Check script 'fastqc.nf' at line: 25
+
+
+Source block:
+  """
+  trim_galore --fastqc --paired ${reads1} ${reads2}
+  """
+
+Container:
+  community.wave.seqera.io/library/trim-galore:0.6.10--1bf8ca4e1967cd18
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Jul-18 06:17:21.749 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Process `FastQC (2)` script contains error(s)
+Jul-18 06:17:21.796 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] FastQC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jul-18 06:17:21.803 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FastQC (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `FastQC (1)` script contains error(s)
+Jul-18 06:17:21.804 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-18 06:17:21.804 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-18 06:17:21.804 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-18 06:17:21.810 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FastQC; work-dir=null
+  error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
+Jul-18 06:17:21.820 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-18 06:17:21.977 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-18 06:17:22.018 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

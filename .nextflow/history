@@ -1,8 +1,0 @@
-2025-07-15 23:00:47	2.4s	voluminous_hirsch	OK	2ce0b0e2943449188092a0e25102f0dadc70cb0a	f60fcaad-a4c2-4688-93e2-6ca740b512e1	nextflow run hello
-2025-07-15 23:08:33	2.1s	dreamy_lavoisier	OK	c37d33933f0646399fae4ce8604036a4	b263cbcf-249e-45ca-8585-678b5db246c3	nextflow run bin/fastqc.nf
-2025-07-15 23:09:25	-	loving_montalcini	-	713d9549cfdf52ffb33ec09c3f987d20	2f6f5a68-9acb-4eef-b418-cf89de9967b2	nextflow run bin/fastqc.nf
-2025-07-15 23:10:01	2.9s	sad_easley	OK	0ad37afc6c36e66737b36a16643ae943	fde6a70d-9a2b-4aaa-a0db-4506e074ea53	nextflow run bin/fastqc.nf
-2025-07-15 23:11:37	-	peaceful_brahmagupta	-	912df57a5dfb1fc5add7645db1eb0a8c	2855b7ba-d75b-4199-b259-4f92e9fc2416	nextflow run bin/fastqc.nf
-2025-07-15 23:12:16	2.4s	pedantic_raman	OK	791bbebecf04866093dbb2eec4c42855	53fe01c6-8b71-41aa-b953-408165dcec0e	nextflow run bin/fastqc.nf
-2025-07-15 23:13:12	2.2s	astonishing_carson	OK	b0ef888e9de8f2e481c347a943e2bf07	2dde2e36-658a-4fdf-a610-0c3af248ac8d	nextflow run bin/fastqc.nf
-2025-07-15 23:13:56	1.7s	cranky_ritchie	OK	aad6972156400ed00aa2560b9346e37b	b730716e-c345-445d-a5a2-3345d6184d20	nextflow run bin/fastqc.nf

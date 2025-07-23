@@ -1,1 +1,1 @@
-/workspaces/prime-seq/bin/work/a4/caf7e78f58b334ac9e72cce3e20baf/SRR005_1.fastq.gz_trimming_report.txt
+/workspaces/prime-seq/bin/work/8c/c5bc9e3e07ab0619aa486a4821bebb/SRR005_1.fastq.gz_trimming_report.txt
