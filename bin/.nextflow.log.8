@@ -1,89 +1,207 @@
-Jul-18 06:17:18.671 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
-Jul-18 06:17:18.926 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Jul-18 06:17:18.967 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Jul-18 06:17:19.008 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-18 06:17:19.015 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-18 06:17:19.024 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jul-18 06:17:19.053 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-18 06:17:19.100 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/prime-seq/bin/nextflow.config
-Jul-18 06:17:19.104 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/prime-seq/bin/nextflow.config
-Jul-18 06:17:19.202 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
-Jul-18 06:17:19.207 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
-Jul-18 06:17:19.231 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jul-18 06:17:20.004 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jul-18 06:17:20.027 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [loquacious_bartik] DSL2 - revision: da6106a705
-Jul-18 06:17:20.031 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-18 06:17:20.031 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-18 06:17:20.113 [main] DEBUG nextflow.Session - Session UUID: 843077cb-6e05-4c26-8ba4-0d7611da6727
-Jul-18 06:17:20.114 [main] DEBUG nextflow.Session - Run name: loquacious_bartik
-Jul-18 06:17:20.115 [main] DEBUG nextflow.Session - Executor pool size: 2
-Jul-18 06:17:20.128 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-18 06:17:20.136 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-18 06:17:20.166 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-23 06:24:28.730 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf -resume
+Jul-23 06:24:29.142 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-23 06:24:29.191 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-23 06:24:29.270 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-23 06:24:29.271 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-23 06:24:29.281 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-23 06:24:29.318 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-23 06:24:29.376 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/prime-seq/bin/nextflow.config
+Jul-23 06:24:29.381 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/prime-seq/bin/nextflow.config
+Jul-23 06:24:29.467 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-23 06:24:29.474 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Jul-23 06:24:29.483 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-23 06:24:30.211 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-23 06:24:30.239 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [astonishing_ptolemy] DSL2 - revision: 52222e0f12
+Jul-23 06:24:30.241 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-23 06:24:30.241 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-23 06:24:30.316 [main] DEBUG nextflow.Session - Session UUID: a6835c44-a531-45f2-b45f-fc7f8d7cedbd
+Jul-23 06:24:30.319 [main] DEBUG nextflow.Session - Run name: astonishing_ptolemy
+Jul-23 06:24:30.319 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-23 06:24:30.330 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-23 06:24:30.336 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 06:24:30.363 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC 
   System: Linux 6.8.0-1027-azure
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 29136@codespaces-b9a470 [127.0.0.1]
-  CPUs: 2 - Mem: 7.8 GB (332.3 MB) - Swap: 0 (0)
-Jul-18 06:17:20.204 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
-Jul-18 06:17:20.205 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
-Jul-18 06:17:20.218 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-18 06:17:20.230 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-18 06:17:20.238 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-18 06:17:20.285 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-18 06:17:20.298 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
-Jul-18 06:17:20.380 [main] DEBUG nextflow.Session - Session start
-Jul-18 06:17:21.005 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-18 06:17:21.305 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-18 06:17:21.305 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-18 06:17:21.314 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-18 06:17:21.323 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
-Jul-18 06:17:21.327 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-18 06:17:21.379 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FastQC': maxForks=0; fair=false; array=0
-Jul-18 06:17:21.450 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Alignment, FastQC
-Jul-18 06:17:21.453 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Jul-18 06:17:21.464 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
-Jul-18 06:17:21.466 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
-Jul-18 06:17:21.467 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_737bb28243a24681: /workspaces/prime-seq/bin/fastqc.nf
-Jul-18 06:17:21.467 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-18 06:17:21.467 [main] DEBUG nextflow.Session - Session await
-Jul-18 06:17:21.654 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=FastQC (2); work-dir=null
-  error [nextflow.exception.ProcessUnrecoverableException]: Process `FastQC (2)` script contains error(s)
-Jul-18 06:17:21.738 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FastQC (2)'
+  Process: 91722@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (652.9 MB) - Swap: 0 (0)
+Jul-23 06:24:30.445 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
+Jul-23 06:24:30.446 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-23 06:24:30.459 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-23 06:24:30.472 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-23 06:24:30.480 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-23 06:24:30.519 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-23 06:24:30.531 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-23 06:24:30.619 [main] DEBUG nextflow.Session - Session start
+Jul-23 06:24:31.517 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-23 06:24:31.822 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 06:24:31.823 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 06:24:31.835 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-23 06:24:31.849 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jul-23 06:24:31.854 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-23 06:24:31.900 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FastQC': maxForks=0; fair=false; array=0
+Jul-23 06:24:31.983 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 06:24:31.984 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 06:24:31.985 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Extract_barcodes': maxForks=0; fair=false; array=0
+Jul-23 06:24:31.994 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Alignment, Extract_barcodes, FastQC
+Jul-23 06:24:31.997 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Jul-23 06:24:32.004 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
+Jul-23 06:24:32.008 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
+Jul-23 06:24:32.008 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Extract_barcodes
+Jul-23 06:24:32.009 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_7ba040e1f50340e0: /workspaces/prime-seq/bin/fastqc.nf
+Jul-23 06:24:32.013 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-23 06:24:32.013 [main] DEBUG nextflow.Session - Session await
+Jul-23 06:24:32.508 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [9a/408168] Cached process > FastQC (2)
+Jul-23 06:24:32.508 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [99/594415] Cached process > FastQC (1)
+Jul-23 06:24:32.775 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [7b/cb3e6b] Cached process > FastQC (4)
+Jul-23 06:24:32.784 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [81/aaedf4] Cached process > FastQC (3)
+Jul-23 06:24:32.856 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [4c/bf5600] Cached process > FastQC (5)
+Jul-23 06:24:32.870 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:24:32.887 [Task submitter] INFO  nextflow.Session - [00/701fa2] Submitted process > Extract_barcodes (2)
+Jul-23 06:24:32.948 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:24:32.952 [Task submitter] INFO  nextflow.Session - [19/8492ec] Submitted process > Extract_barcodes (1)
+Jul-23 06:24:35.437 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: Extract_barcodes (1); status: COMPLETED; exit: 1; error: -; workDir: /workspaces/prime-seq/bin/work/19/8492ec253ad80dac7b9b56fba30de0]
+Jul-23 06:24:35.441 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 06:24:35.456 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:24:35.459 [Task submitter] INFO  nextflow.Session - [b7/ad5b5b] Submitted process > Extract_barcodes (4)
+Jul-23 06:24:35.458 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=Extract_barcodes (1); work-dir=/workspaces/prime-seq/bin/work/19/8492ec253ad80dac7b9b56fba30de0
+  error [nextflow.exception.ProcessFailedException]: Process `Extract_barcodes (1)` terminated with an error exit status (1)
+Jul-23 06:24:35.489 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: Extract_barcodes (2); status: COMPLETED; exit: 1; error: -; workDir: /workspaces/prime-seq/bin/work/00/701fa25f304afb8ef2ed041f3222b6]
+Jul-23 06:24:35.515 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:24:35.515 [Task submitter] INFO  nextflow.Session - [6f/4a3426] Submitted process > Extract_barcodes (3)
+Jul-23 06:24:35.570 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'Extract_barcodes (1)'
 
 Caused by:
-  No such variable: reads1 -- Check script 'fastqc.nf' at line: 25
+  Process `Extract_barcodes (1)` terminated with an error exit status (1)
 
 
-Source block:
-  """
-  trim_galore --fastqc --paired ${reads1} ${reads2}
-  """
+Command executed:
+
+  umi_tools extract --extract-method=regex --bc-pattern="'(?P<umi_1>.{18})(?P<cell_1>.{10})$'" --stdin=SRR005_1_val_1.fq.gz --stdout=SRR005_1_val_1_extracted.fastq.gz      --read2-in=SRR005_2_val_2.fq.gz --read2-out=SRR005_2_val_2_extracted.fastq.gz --whitelist=/workspaces/prime-seq/data/barcodes_whitelist.tsv
+
+Command exit status:
+  1
+
+Command output:
+  # UMI-tools version: 1.1.6
+  # output generated by extract --extract-method=regex --bc-pattern='(?P<umi_1>.{18})(?P<cell_1>.{10})$' --stdin=SRR005_1_val_1.fq.gz --stdout=SRR005_1_val_1_extracted.fastq.gz --read2-in=SRR005_2_val_2.fq.gz --read2-out=SRR005_2_val_2_extracted.fastq.gz --whitelist=/workspaces/prime-seq/data/barcodes_whitelist.tsv
+  # job started at Wed Jul 23 06:24:35 2025 on cc82f8ddb079 -- fec635dc-8d9b-4667-82c1-7d4b68b32a87
+  # pid: 17, system: Linux 6.8.0-1027-azure #32~22.04.1-Ubuntu SMP Thu Apr  3 20:26:27 UTC 2025 x86_64
+  # blacklist                               : None
+  # compresslevel                           : 6
+  # correct_umi_threshold                   : 0
+  # either_read                             : False
+  # either_read_resolve                     : discard
+  # error_correct_cell                      : False
+  # extract_method                          : regex
+  # filter_cell_barcode                     : None
+  # filter_cell_barcodes                    : False
+  # filter_umi                              : None
+  # filtered_out                            : None
+  # filtered_out2                           : None
+  # ignore_suffix                           : False
+  # log2stderr                              : False
+  # loglevel                                : 1
+  # pattern                                 : '(?P<umi_1>.{18})(?P<cell_1>.{10})$'
+  # pattern2                                : None
+  # prime3                                  : None
+  # quality_encoding                        : None
+  # quality_filter_mask                     : None
+  # quality_filter_threshold                : None
+  # random_seed                             : None
+  # read2_in                                : SRR005_2_val_2.fq.gz
+  # read2_only                              : False
+  # read2_out                               : SRR005_2_val_2_extracted.fastq.gz
+  # read2_stdout                            : False
+  # reads_subset                            : None
+  # reconcile                               : False
+  # retain_umi                              : None
+  # short_help                              : None
+  # stderr                                  : <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>
+  # stdin                                   : <_io.TextIOWrapper name='SRR005_1_val_1.fq.gz' encoding='ascii'>
+  # stdlog                                  : <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+  # stdout                                  : <_io.TextIOWrapper name='SRR005_1_val_1_extracted.fastq.gz' encoding='ascii'>
+  # timeit_file                             : None
+  # timeit_header                           : None
+  # timeit_name                             : all
+  # tmpdir                                  : None
+  # umi_correct_log                         : None
+  # umi_separator                           : _
+  # umi_whitelist                           : None
+  # umi_whitelist_paired                    : None
+  # whitelist                               : /workspaces/prime-seq/data/barcodes_whitelist.tsv
+
+Command error:
+  # ignore_suffix                           : False
+  # log2stderr                              : False
+  # loglevel                                : 1
+  # pattern                                 : '(?P<umi_1>.{18})(?P<cell_1>.{10})$'
+  # pattern2                                : None
+  # prime3                                  : None
+  # quality_encoding                        : None
+  # quality_filter_mask                     : None
+  # quality_filter_threshold                : None
+  # random_seed                             : None
+  # read2_in                                : SRR005_2_val_2.fq.gz
+  # read2_only                              : False
+  # read2_out                               : SRR005_2_val_2_extracted.fastq.gz
+  # read2_stdout                            : False
+  # reads_subset                            : None
+  # reconcile                               : False
+  # retain_umi                              : None
+  # short_help                              : None
+  # stderr                                  : <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>
+  # stdin                                   : <_io.TextIOWrapper name='SRR005_1_val_1.fq.gz' encoding='ascii'>
+  # stdlog                                  : <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+  # stdout                                  : <_io.TextIOWrapper name='SRR005_1_val_1_extracted.fastq.gz' encoding='ascii'>
+  # timeit_file                             : None
+  # timeit_header                           : None
+  # timeit_name                             : all
+  # tmpdir                                  : None
+  # umi_correct_log                         : None
+  # umi_separator                           : _
+  # umi_whitelist                           : None
+  # umi_whitelist_paired                    : None
+  # whitelist                               : /workspaces/prime-seq/data/barcodes_whitelist.tsv
+  Traceback (most recent call last):
+    File "/opt/conda/bin/umi_tools", line 11, in <module>
+      sys.exit(main())
+               ^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/umi_tools/umi_tools.py", line 61, in main
+      module.main(sys.argv)
+    File "/opt/conda/lib/python3.12/site-packages/umi_tools/extract.py", line 417, in main
+      cell_whitelist, false_to_true_map = whitelist_methods.getUserDefinedBarcodes(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/umi_tools/whitelist_methods.py", line 627, in getUserDefinedBarcodes
+      whitelist = [x for x in whitelist_barcodes]
+                              ^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/umi_tools/whitelist_methods.py", line 532, in singleBarcodeGenerator
+      with U.openFile(whitelist_tsv, "r") as inf:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/conda/lib/python3.12/site-packages/umi_tools/Utilities.py", line 525, in openFile
+      return open(filename, mode)
+             ^^^^^^^^^^^^^^^^^^^^
+  FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/prime-seq/data/barcodes_whitelist.tsv'
+
+Work dir:
+  /workspaces/prime-seq/bin/work/19/8492ec253ad80dac7b9b56fba30de0
 
 Container:
-  community.wave.seqera.io/library/trim-galore:0.6.10--1bf8ca4e1967cd18
+  community.wave.seqera.io/library/umi_tools:1.1.6--2c79f13606642e4c
 
 Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
-Jul-18 06:17:21.749 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Process `FastQC (2)` script contains error(s)
-Jul-18 06:17:21.796 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
-[process] FastQC
-  status=ACTIVE
-  port 0: (queue) OPEN  ; channel: -
-  port 1: (cntrl) -     ; channel: $
-
-Jul-18 06:17:21.803 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=FastQC (1); work-dir=null
-  error [nextflow.exception.ProcessUnrecoverableException]: Process `FastQC (1)` script contains error(s)
-Jul-18 06:17:21.804 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-18 06:17:21.804 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-18 06:17:21.804 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-18 06:17:21.810 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=FastQC; work-dir=null
-  error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
-Jul-18 06:17:21.820 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Jul-18 06:17:21.977 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-18 06:17:22.018 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Jul-23 06:24:35.575 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=Extract_barcodes (2); work-dir=/workspaces/prime-seq/bin/work/00/701fa25f304afb8ef2ed041f3222b6
+  error [nextflow.exception.ProcessFailedException]: Process `Extract_barcodes (2)` terminated with an error exit status (1)
+Jul-23 06:24:35.615 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `Extract_barcodes (1)` terminated with an error exit status (1)
+Jul-23 06:24:35.665 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-23 06:24:35.665 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-23 06:24:35.666 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-23 06:24:35.681 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (2)
+Jul-23 06:24:35.771 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=2; ignoredCount=0; cachedCount=5; pendingCount=1; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=0ms; failedDuration=4.9s; cachedDuration=56.2s;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+Jul-23 06:24:35.948 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-23 06:24:36.074 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

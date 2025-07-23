@@ -1,76 +1,85 @@
-Jul-18 06:18:15.672 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf
-Jul-18 06:18:15.880 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Jul-18 06:18:15.915 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Jul-18 06:18:15.952 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-18 06:18:15.954 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-18 06:18:15.957 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jul-18 06:18:15.977 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-18 06:18:16.014 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/prime-seq/bin/nextflow.config
-Jul-18 06:18:16.019 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/prime-seq/bin/nextflow.config
-Jul-18 06:18:16.119 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
-Jul-18 06:18:16.124 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3bcd426c] - activable => nextflow.secret.LocalSecretsProvider@3bcd426c
-Jul-18 06:18:16.135 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Jul-18 06:18:16.842 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jul-18 06:18:16.861 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [naughty_meitner] DSL2 - revision: bf10fa3cb9
-Jul-18 06:18:16.865 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-18 06:18:16.865 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-18 06:18:16.941 [main] DEBUG nextflow.Session - Session UUID: bc1584d8-e5d9-428f-8062-76bb315f27b1
-Jul-18 06:18:16.942 [main] DEBUG nextflow.Session - Run name: naughty_meitner
-Jul-18 06:18:16.943 [main] DEBUG nextflow.Session - Executor pool size: 2
-Jul-18 06:18:16.961 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-18 06:18:16.969 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-18 06:18:16.996 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-23 06:25:34.571 [main] DEBUG nextflow.cli.Launcher - $> nextflow run fastqc.nf -resume
+Jul-23 06:25:34.859 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-23 06:25:34.898 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-23 06:25:34.940 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-23 06:25:34.941 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-23 06:25:34.945 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-23 06:25:34.964 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-23 06:25:35.045 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspaces/prime-seq/bin/nextflow.config
+Jul-23 06:25:35.048 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspaces/prime-seq/bin/nextflow.config
+Jul-23 06:25:35.096 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jul-23 06:25:35.102 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4bdc8b5d] - activable => nextflow.secret.LocalSecretsProvider@4bdc8b5d
+Jul-23 06:25:35.114 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-23 06:25:35.913 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-23 06:25:35.933 [main] DEBUG nextflow.cli.CmdRun - Launching `fastqc.nf` [nostalgic_poitras] DSL2 - revision: 332f852ebd
+Jul-23 06:25:35.937 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-23 06:25:35.938 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-23 06:25:36.015 [main] DEBUG nextflow.Session - Session UUID: a6835c44-a531-45f2-b45f-fc7f8d7cedbd
+Jul-23 06:25:36.016 [main] DEBUG nextflow.Session - Run name: nostalgic_poitras
+Jul-23 06:25:36.017 [main] DEBUG nextflow.Session - Executor pool size: 2
+Jul-23 06:25:36.027 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-23 06:25:36.034 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 06:25:36.063 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC 
   System: Linux 6.8.0-1027-azure
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 29680@codespaces-b9a470 [127.0.0.1]
-  CPUs: 2 - Mem: 7.8 GB (362.2 MB) - Swap: 0 (0)
-Jul-18 06:18:17.039 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
-Jul-18 06:18:17.040 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
-Jul-18 06:18:17.053 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-18 06:18:17.065 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-18 06:18:17.072 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-18 06:18:17.116 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-18 06:18:17.128 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
-Jul-18 06:18:17.200 [main] DEBUG nextflow.Session - Session start
-Jul-18 06:18:17.954 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-18 06:18:18.235 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-18 06:18:18.236 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-18 06:18:18.244 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-18 06:18:18.254 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
-Jul-18 06:18:18.257 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-18 06:18:18.293 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FastQC': maxForks=0; fair=false; array=0
-Jul-18 06:18:18.351 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Alignment, FastQC
-Jul-18 06:18:18.354 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Jul-18 06:18:18.364 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
-Jul-18 06:18:18.365 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
-Jul-18 06:18:18.368 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_0d150113e3c71d6b: /workspaces/prime-seq/bin/fastqc.nf
-Jul-18 06:18:18.369 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-18 06:18:18.369 [main] DEBUG nextflow.Session - Session await
-Jul-18 06:18:18.789 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-18 06:18:18.801 [Task submitter] INFO  nextflow.Session - [61/a70bfb] Submitted process > FastQC (1)
-Jul-18 06:18:18.917 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-18 06:18:18.925 [Task submitter] INFO  nextflow.Session - [31/68f4c5] Submitted process > FastQC (2)
-Jul-18 06:18:40.906 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FastQC (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/61/a70bfbe6997b62f73ccc3974787b3f]
-Jul-18 06:18:40.912 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-18 06:18:40.945 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-18 06:18:40.945 [Task submitter] INFO  nextflow.Session - [65/5448b3] Submitted process > FastQC (4)
-Jul-18 06:18:43.022 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FastQC (2); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/31/68f4c5ad7c2f6117a0f731b73b56a6]
-Jul-18 06:18:43.051 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-18 06:18:43.060 [Task submitter] INFO  nextflow.Session - [c2/aaac80] Submitted process > FastQC (3)
-Jul-18 06:18:54.345 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FastQC (4); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/65/5448b3f84de10905ff34913f768905]
-Jul-18 06:18:54.383 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-18 06:18:54.386 [Task submitter] INFO  nextflow.Session - [94/fd9fd1] Submitted process > FastQC (5)
-Jul-18 06:18:54.772 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FastQC (3); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/c2/aaac80413547f71722df0cb782a665]
-Jul-18 06:19:02.712 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FastQC (5); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/94/fd9fd1358fcc8200f37ff8f4bf6432]
-Jul-18 06:19:02.750 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-18 06:19:02.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-18 06:19:02.813 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-18 06:19:02.817 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Jul-18 06:19:02.824 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 19s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Jul-18 06:19:02.887 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-18 06:19:02.922 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jul-18 06:19:02.923 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 92910@codespaces-b9a470 [127.0.0.1]
+  CPUs: 2 - Mem: 7.8 GB (603.8 MB) - Swap: 0 (0)
+Jul-23 06:25:36.138 [main] DEBUG nextflow.Session - Work-dir: /workspaces/prime-seq/bin/work [ext2/ext3]
+Jul-23 06:25:36.139 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspaces/prime-seq/bin/bin
+Jul-23 06:25:36.152 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-23 06:25:36.164 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-23 06:25:36.172 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-23 06:25:36.209 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-23 06:25:36.222 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+Jul-23 06:25:36.304 [main] DEBUG nextflow.Session - Session start
+Jul-23 06:25:37.638 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-23 06:25:37.916 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 06:25:37.916 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 06:25:37.923 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-23 06:25:37.932 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=7.8 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Jul-23 06:25:37.935 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-23 06:25:37.972 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FastQC': maxForks=0; fair=false; array=0
+Jul-23 06:25:38.045 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-23 06:25:38.045 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-23 06:25:38.046 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'Extract_barcodes': maxForks=0; fair=false; array=0
+Jul-23 06:25:38.061 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Alignment, Extract_barcodes, FastQC
+Jul-23 06:25:38.065 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Jul-23 06:25:38.078 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
+Jul-23 06:25:38.078 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Extract_barcodes
+Jul-23 06:25:38.079 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /workspaces/prime-seq/data/reads/; pattern: SRR*_{1,2}.fastq.gz; options: [checkIfExists:true]
+Jul-23 06:25:38.081 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_04a5c1869f9f8e2c: /workspaces/prime-seq/bin/fastqc.nf
+Jul-23 06:25:38.081 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-23 06:25:38.081 [main] DEBUG nextflow.Session - Session await
+Jul-23 06:25:38.415 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [99/594415] Cached process > FastQC (1)
+Jul-23 06:25:38.417 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [9a/408168] Cached process > FastQC (2)
+Jul-23 06:25:38.620 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [81/aaedf4] Cached process > FastQC (3)
+Jul-23 06:25:38.622 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [7b/cb3e6b] Cached process > FastQC (4)
+Jul-23 06:25:38.698 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [4c/bf5600] Cached process > FastQC (5)
+Jul-23 06:25:38.736 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:25:38.740 [Task submitter] INFO  nextflow.Session - [fe/b822a3] Submitted process > Extract_barcodes (2)
+Jul-23 06:25:38.769 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:25:38.770 [Task submitter] INFO  nextflow.Session - [9a/d12aa9] Submitted process > Extract_barcodes (1)
+Jul-23 06:25:41.540 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: Extract_barcodes (1); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/9a/d12aa9972365727631f4f301fe7dba]
+Jul-23 06:25:41.541 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 06:25:41.550 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: Extract_barcodes (2); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/fe/b822a3406b4c4ac4e5d49d819b3bb0]
+Jul-23 06:25:41.558 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:25:41.558 [Task submitter] INFO  nextflow.Session - [a0/1a472c] Submitted process > Extract_barcodes (4)
+Jul-23 06:25:41.580 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:25:41.580 [Task submitter] INFO  nextflow.Session - [fb/642ba8] Submitted process > Extract_barcodes (3)
+Jul-23 06:25:44.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: Extract_barcodes (4); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/a0/1a472c31f3e130459b0db0540722e1]
+Jul-23 06:25:44.209 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-23 06:25:44.213 [Task submitter] INFO  nextflow.Session - [7d/91af0d] Submitted process > Extract_barcodes (5)
+Jul-23 06:25:44.608 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: Extract_barcodes (3); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/fb/642ba867efcf0338fb05ec5394c482]
+Jul-23 06:25:45.866 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: Extract_barcodes (5); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/prime-seq/bin/work/7d/91af0da5497f289e4f351a843693b1]
+Jul-23 06:25:45.877 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-23 06:25:45.967 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-23 06:25:45.970 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-23 06:25:45.977 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-23 06:25:45.987 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=5; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=12.6s; failedDuration=0ms; cachedDuration=56.2s;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Jul-23 06:25:46.098 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-23 06:25:46.143 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-23 06:25:46.144 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

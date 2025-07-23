@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/opt/conda/bin/umi_tools", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/umi_tools.py", line 61, in main
+    module.main(sys.argv)
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/extract.py", line 417, in main
+    cell_whitelist, false_to_true_map = whitelist_methods.getUserDefinedBarcodes(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/whitelist_methods.py", line 627, in getUserDefinedBarcodes
+    whitelist = [x for x in whitelist_barcodes]
+                            ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/whitelist_methods.py", line 532, in singleBarcodeGenerator
+    with U.openFile(whitelist_tsv, "r") as inf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/Utilities.py", line 525, in openFile
+    return open(filename, mode)
+           ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/prime-seq/data/barcodes_whitelist.tsv'

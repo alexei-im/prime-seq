@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/opt/conda/bin/umi_tools", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/umi_tools.py", line 61, in main
+    module.main(sys.argv)
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/extract.py", line 306, in main
+    (options, args) = U.Start(parser, argv=argv,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/Utilities.py", line 1083, in Start
+    global_options.stdin = openFile(global_options.stdin, "r")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/umi_tools/Utilities.py", line 513, in openFile
+    return gzip.open(filename, 'rt', encoding="ascii")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/gzip.py", line 65, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'SRR001_1_val_1.fq.gz'
